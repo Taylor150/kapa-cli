@@ -1,4 +1,6 @@
-## Kapa CLI
+# Kapa CLI
+
+![Kapa CLI Screenshot](assets/images/kapa-screenshot.png)
 
 A lightweight Node.js command-line client for the [kapa.ai](https://www.kapa.ai/) HTTP API.
 
