@@ -1,0 +1,41 @@
+{
+  "name": "kapa-cli",
+  "version": "0.1.0",
+  "description": "Terminal CLI wrapper for the Kapa AI API.",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "kapa": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "test": "node --test --loader ts-node/esm src/config.test.ts src/history.test.ts",
+    "clean": "rimraf dist",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "kapa",
+    "cli",
+    "ai"
+  ],
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "clipboardy": "^5.0.0",
+    "commander": "^14.0.2",
+    "ora": "^9.0.0",
+    "undici": "^7.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "rimraf": "^6.1.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
