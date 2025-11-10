@@ -91,18 +91,6 @@ History is stored locally only; delete `~/.local/share/kapa-cli/history.jsonl` i
 - Set `KAPA_HISTORY_KEY` (or reuse `KAPA_VAULT_KEY`) to encrypt prompt/response history. To deliberately write plaintext history, set `KAPA_ALLOW_PLAINTEXT_HISTORY=1`; otherwise history logging is skipped.
 - Environment variables (`KAPA_API_KEY`, `KAPA_PROJECT_ID`, etc.) remain the safest option for automation pipelines when writing to disk is undesirable.
 
-### Development
-
-```
-npm install
-npm run test   # runs node --test with the ts-node loader
-npm run build  # compiles dist/*.js
-```
-
-### License
-
-This project is released under the MIT License (see `LICENSE`). Third-party runtime dependencies (`chalk`, `clipboardy`, `commander`, `ora`, and `undici`) are also MIT-licensed.
-
 ### Using Kapa in AGENTS.md
 
 If you maintain an `AGENTS.md` (or similar agent-instructions file), add a section like:
@@ -120,3 +108,15 @@ For Sonatype-specific requests (documentation, internal knowledge), call the bun
 ```
 
 Feel free to tailor the wording for your team, but keep the escalation/timeout guidance so AI agents can reliably hit the API.
+
+### Development
+
+```
+npm install
+npm run test   # runs node --test with the ts-node loader
+npm run build  # compiles dist/*.js
+```
+
+### License
+
+This project is released under the MIT License (see `LICENSE`). Third-party runtime dependencies (`chalk`, `clipboardy`, `commander`, `ora`, and `undici`) are also MIT-licensed.
